@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap');
 
 body {
-    font-family: "Share Tech Mono", "Segoe UI", Arial, monospace;
-    background: linear-gradient(135deg, #0e1016 60%, #171b2b 100%);
-    color: #2ed8ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #2563eb 60%, #10b981 100%);
+    color: #1f2937;
     margin: 0;
     min-height: 100vh;
     transition: background 0.3s, color 0.3s;
     letter-spacing: 0.03em;
 }
 body.light {
-    background: linear-gradient(135deg, #232b3b 0%, #e5f6ff 120%);
+    background: linear-gradient(135deg, #f8fafc 0%, #d1fae5 120%);
     color: #1b263b;
 }
 #cyber-bg-canvas {
@@ -24,86 +24,87 @@ body.light {
 .container {
     max-width: 540px;
     margin: 2rem auto;
-    background: rgba(20, 24, 40, 0.88);
+    background: rgba(255, 255, 255, 0.92);
     padding: 2.5rem;
     border-radius: 20px;
-    box-shadow: 0 0 40px #2ed8ff44, 0 2px 12px #0006;
+    box-shadow: 0 0 40px #2563eb33, 0 2px 12px #0003;
     position: relative;
-    border: 2px solid #2ed8ff44;
+    border: 2px solid #2563eb33;
     backdrop-filter: blur(2px);
 }
 body.light .container {
-    background: linear-gradient(135deg, #e5f6ff 60%, #aaf2ff 100%);
+    background: linear-gradient(135deg, #ffffff 60%, #ecfdf5 100%);
     color: #1b263b;
-    border: 2px solid #2ed8ff44;
-    box-shadow: 0 0 38px #2ed8ff44, 0 1px 12px #2ed8ff22;
+    border: 2px solid #10b98133;
+    box-shadow: 0 0 38px #10b98144, 0 1px 12px #2563eb22;
 }
 h1 {
-    font-family: "Share Tech Mono", "Segoe UI", Arial, monospace;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     font-size: 2.1rem;
     margin-bottom: 1.6rem;
     letter-spacing: 0.09em;
-    text-shadow: 0 0 18px #2ed8ff88, 0 1px 0 #191c22;
+    color: #2563eb;
+    text-shadow: 0 0 18px #2563eb55;
 }
 body.light h1 {
-    text-shadow: 0 0 18px #2ed8ff66, 0 1px 0 #aaf2ff;
+    color: #10b981;
+    text-shadow: 0 0 12px #10b98155;
 }
 h1 .cyber {
-    color: #2ed8ff;
+    color: #2563eb;
     font-weight: bold;
-    text-shadow: 0 0 18px #2ed8ff88, 0 1px 0 #191c22;
+    text-shadow: 0 0 18px #2563eb55;
 }
 input, button, select {
-    font-family: "Share Tech Mono", monospace;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.1rem;
     margin: 0.25rem;
     padding: 0.45rem 0.6rem;
     border-radius: 7px;
-    border: 2px solid #2ed8ff33;
-    background: rgba(25, 28, 34, 0.95);
-    color: #2ed8ff;
+    border: 2px solid #2563eb33;
+    background: rgba(250, 250, 255, 0.95);
+    color: #1f2937;
     outline: none;
     box-sizing: border-box;
     transition: border 0.2s, box-shadow 0.2s, background 0.2s;
 }
 body.light input, body.light button, body.light select {
-    background: linear-gradient(90deg, #e5f6ff 70%, #aaf2ff 130%);
-    color: #1b263b;
-    border: 2px solid #2ed8ff66;
-    box-shadow: 0 0 12px #2ed8ff22;
+    background: linear-gradient(90deg, #ffffff 70%, #ecfdf5 130%);
+    color: #1f2937;
+    border: 2px solid #10b98144;
+    box-shadow: 0 0 12px #10b98122;
 }
 input:focus, button:focus, select:focus {
-    border: 2.5px solid #2ed8ff;
-    box-shadow: 0 0 12px #2ed8ff55;
+    border: 2.5px solid #2563eb;
+    box-shadow: 0 0 12px #2563eb55;
 }
 input[type="checkbox"] {
     margin-right: 0.5rem;
-    accent-color: #2ed8ff;
+    accent-color: #2563eb;
 }
 button {
-    background: linear-gradient(90deg, #2ed8ff 40%, #181c2a 120%);
-    color: #181c2a;
+    background: linear-gradient(90deg, #2563eb 40%, #10b981 120%);
+    color: #ffffff;
     font-weight: bold;
     cursor: pointer;
     border: none;
-    text-shadow: 0 0 8px #2ed8ff55;
-    box-shadow: 0 0 8px #2ed8ff44;
+    text-shadow: 0 0 8px #2563eb55;
+    box-shadow: 0 0 8px #2563eb44;
 }
 body.light button {
-    background: linear-gradient(90deg, #2ed8ff 40%, #aaf2ff 120%);
-    color: #1b263b;
-    box-shadow: 0 0 18px #2ed8ff44;
+    background: linear-gradient(90deg, #10b981 40%, #2563eb 120%);
+    color: #ffffff;
+    box-shadow: 0 0 18px #10b98144;
 }
 button:hover {
-    background: linear-gradient(90deg, #25a6c8 40%, #0e1016 120%);
-    color: #2ed8ff;
-    box-shadow: 0 0 16px #2ed8ff99;
-    border: none;
+    background: linear-gradient(90deg, #1946b3 40%, #0ea371 120%);
+    color: #ffffff;
+    box-shadow: 0 0 16px #2563eb88;
 }
 body.light button:hover {
-    background: linear-gradient(90deg, #25a6c8 40%, #e5f6ff 120%);
-    color: #2ed8ff;
+    background: linear-gradient(90deg, #0ea371 40%, #2563eb 120%);
+    color: #ffffff;
 }
 .password-input-group {
     display: flex;
@@ -112,35 +113,36 @@ body.light button:hover {
 }
 #strength-meter {
     height: 8px;
-    background: #222e;
+    background: #e5e7eb;
     margin: 0.7rem 0;
     border-radius: 3px;
     width: 100%;
-    box-shadow: 0 0 6px #2ed8ff44;
-    border: 1px solid #2ed8ff22;
+    box-shadow: 0 0 6px #2563eb44;
+    border: 1px solid #2563eb22;
 }
 body.light #strength-meter {
-    background: linear-gradient(90deg, #aaf2ff 80%, #e5f6ff 100%);
+    background: linear-gradient(90deg, #d1fae5 80%, #ffffff 100%);
 }
 #strength-bar {
     height: 100%;
     border-radius: 3px;
-    background: linear-gradient(90deg, #e74c3c, #f1c40f, #2ed8ff);
+    background: linear-gradient(90deg, #ef4444, #f59e0b, #10b981);
     width: 0;
     transition: width 0.3s;
-    box-shadow: 0 0 14px #2ed8ff88;
+    box-shadow: 0 0 14px #2563eb88;
 }
 #strength-text {
-    font-family: "Share Tech Mono", monospace;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1rem;
     font-weight: bold;
     letter-spacing: 0.08em;
     margin-top: 0.1em;
-    text-shadow: 0 0 10px #2ed8ff44;
+    color: #2563eb;
+    text-shadow: 0 0 10px #2563eb44;
 }
 body.light #strength-text {
-    color: #1b263b;
-    text-shadow: 0 0 10px #2ed8ff33;
+    color: #10b981;
+    text-shadow: 0 0 10px #10b98133;
 }
 .criteria-list {
     list-style: none;
@@ -150,47 +152,47 @@ body.light #strength-text {
 }
 .criteria-list li {
     padding: 0.1em 0.5em;
-    text-shadow: 0 0 8px #2ed8ff44;
+    text-shadow: 0 0 8px #2563eb44;
 }
 body.light .criteria-list li {
     color: #1b263b;
-    text-shadow: 0 0 6px #2ed8ff22;
+    text-shadow: 0 0 6px #10b98122;
 }
 .policy-settings {
     margin: 1em 0;
 }
 #policy-panel {
-    background: #1c2231ee;
+    background: #f9fafb;
     padding: 1em;
     border-radius: 8px;
     margin-top: 0.5em;
-    box-shadow: 0 0 12px #2ed8ff22;
-    border: 1px solid #2ed8ff22;
+    box-shadow: 0 0 12px #2563eb22;
+    border: 1px solid #2563eb22;
 }
 body.light #policy-panel {
-    background: linear-gradient(90deg, #aaf2ff 80%, #e5f6ff 100%);
+    background: linear-gradient(90deg, #ecfdf5 80%, #ffffff 100%);
     color: #1b263b;
-    box-shadow: 0 0 12px #2ed8ff22;
-    border: 1px solid #2ed8ff44;
+    box-shadow: 0 0 12px #10b98122;
+    border: 1px solid #10b98144;
 }
 .hidden { display: none; }
 .generator, .export {
     margin-top: 2rem;
-    background: #191c22ee;
+    background: #ffffffee;
     padding: 1rem;
     border-radius: 8px;
-    box-shadow: 0 0 14px #2ed8ff22, 0 1px 2px #0008;
-    border: 1.5px solid #2ed8ff22;
+    box-shadow: 0 0 14px #2563eb22, 0 1px 2px #0004;
+    border: 1.5px solid #2563eb22;
 }
 body.light .generator, body.light .export {
-    background: linear-gradient(90deg, #e5f6ff 80%, #aaf2ff 100%);
+    background: linear-gradient(90deg, #ffffff 80%, #ecfdf5 100%);
     color: #1b263b;
-    border: 1.5px solid #2ed8ff44;
+    border: 1.5px solid #10b98144;
 }
 .generator h2, .export button {
-    text-shadow: 0 0 14px #2ed8ff55;
+    text-shadow: 0 0 14px #2563eb55;
 }
-/* Move theme toggle to the TOP RIGHT */
+/* Theme Toggle */
 #theme-toggle {
     position: absolute;
     top: 1.2rem;
@@ -199,17 +201,17 @@ body.light .generator, body.light .export {
     cursor: pointer;
     user-select: none;
     z-index: 2;
-    color: #2ed8ff;
-    text-shadow: 0 0 24px #2ed8ff99, 0 1px 0 #191c22;
+    color: #2563eb;
+    text-shadow: 0 0 24px #2563eb99;
 }
 body.light #theme-toggle {
-    color: #2ed8ff;
-    text-shadow: 0 0 18px #2ed8ff66, 0 1px 0 #aaf2ff;
+    color: #10b981;
+    text-shadow: 0 0 18px #10b98166;
 }
 .tooltip {
     display: inline-block;
-    background: #2ed8ff;
-    color: #191c22;
+    background: #2563eb;
+    color: #ffffff;
     border-radius: 50%;
     width: 1.2em;
     height: 1.2em;
@@ -219,18 +221,18 @@ body.light #theme-toggle {
     font-size: 1em;
     margin-left: 0.5em;
     cursor: pointer;
-    box-shadow: 0 0 8px #2ed8ff55;
+    box-shadow: 0 0 8px #2563eb55;
 }
 input[readonly] {
-    background: #0e1016;
-    color: #2ed8ff;
-    border: 1.5px solid #2ed8ff77;
-    box-shadow: 0 0 8px #2ed8ff22;
+    background: #f1f5f9;
+    color: #1f2937;
+    border: 1.5px solid #2563eb55;
+    box-shadow: 0 0 8px #2563eb22;
 }
 body.light input[readonly] {
-    background: linear-gradient(90deg, #e5f6ff 80%, #aaf2ff 100%);
+    background: linear-gradient(90deg, #ffffff 80%, #ecfdf5 100%);
     color: #1b263b;
-    border: 1.5px solid #2ed8ff99;
+    border: 1.5px solid #10b98199;
 }
 @media (max-width: 600px) {
   .container {
